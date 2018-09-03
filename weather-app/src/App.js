@@ -37,7 +37,7 @@ class App extends Component {
         country: undefined,
         humidity: undefined,
         description: undefined,
-        error: "Please enter the requested values."
+        error: "loladamix."
       });
     }
   }
