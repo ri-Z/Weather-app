@@ -19,7 +19,7 @@ class App extends Component {
     event.preventDefault();
     const city = event.target.elements.city.value;
     const country = event.target.elements.country.value;
-    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&id=524901&APPID=${API_KEY}`);
+    const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&APPID=${API_KEY}`);
     const data = await api_call.json();
     if (city && country) {
       this.setState({
